@@ -93,11 +93,13 @@
         app:layout_constraintTop_toBottomOf="@+id/tilEmail" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_baseline_perm_identity_24"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="15dp" />
+        android:id="@+id/ivimage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="209dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

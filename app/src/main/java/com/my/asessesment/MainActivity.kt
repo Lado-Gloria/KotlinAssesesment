@@ -94,10 +94,23 @@ class MainActivity : AppCompatActivity() {
         val phone =binding.tiePhonenumber.text.toString()
         val email =binding.tilEmail.textDirection.toString()
         val password =binding.tiePassword.text.toString()
+        val imag =binding.ivimage.textDirection.toString()
         var error =false
         if (name.isBlank()){
             binding. tieuserName.error = "name is required"
            error = true
+        }
+        if (phone.isBlank()){
+            binding. tilPhonenumber.error = "number is required"
+            error = true
+        }
+        if (email.isBlank()){
+            binding. tilEmail.error = "email is required"
+            error = true
+        }
+        if (password.isBlank()){
+            binding. tiePassword.error = "name is required"
+            error = true
         }
 
     }
