@@ -5,5 +5,90 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MyList">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiluserName"
+        android:layout_width="349dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieuserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="First Name"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPhonenumber"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiluserName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiePhonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phoneNumber" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilemail"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilPhonenumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tieEmailAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilemail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="175dp"
+        android:text="login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
